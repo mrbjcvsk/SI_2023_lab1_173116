@@ -1,0 +1,529 @@
+HP@DESKTOP-504J45P MINGW64 ~ (master)
+$ git commit -m "First commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'HP@DESKTOP-504J45P.(none)')
+
+HP@DESKTOP-504J45P MINGW64 ~ (master)
+$ git init -b main
+warning: re-init: ignored --initial-branch=main
+Reinitialized existing Git repository in C:/Users/HP/.git/
+
+HP@DESKTOP-504J45P MINGW64 ~ (master)
+$ mkdir SI_2023_lab1_173116
+
+HP@DESKTOP-504J45P MINGW64 ~ (master)
+$ cd SI_2023_lab1_173116
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git init
+Initialized empty Git repository in C:/Users/HP/SI_2023_lab1_173116/.git/
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ .git
+bash: .git: command not found
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ notepad README.txt
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git add .
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git commit -m 'my first commit'
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'HP@DESKTOP-504J45P.(none)')
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git commit -m
+error: switch `m' requires a value
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git commit -m mrbjcvsk
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'HP@DESKTOP-504J45P.(none)')
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git remote add origin https://github.com/mrbjcvsk/SI_2023_lab1_173116
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ mkdir README.md
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ add README.md
+bash: add: command not found
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git add README.md
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.txt
+
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ rm README.txt
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    README.txt
+
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git commit
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'HP@DESKTOP-504J45P.(none)')
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git remote
+origin
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git remote -v
+origin  https://github.com/mrbjcvsk/SI_2023_lab1_173116 (fetch)
+origin  https://github.com/mrbjcvsk/SI_2023_lab1_173116 (push)
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git commit -m 'Initial commit.'
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'HP@DESKTOP-504J45P.(none)')
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git config --global user.name "mrbjcvsk"
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git commit -m 'Inital commit.'
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'HP@DESKTOP-504J45P.(none)')
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git add 'SILab1.java'
+fatal: pathspec 'SILab1.java' did not match any files
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git add 'README.md'
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ ls
+README.md/
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git clone https://git01.codeplex.com/SI_2023_lab1_173116
+Cloning into 'SI_2023_lab1_173116'...
+fatal: unable to access 'https://git01.codeplex.com/SI_2023_lab1_173116/': Could not resolve host: git01.codeplex.com
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git remote
+origin
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git remote -v
+origin  https://github.com/mrbjcvsk/SI_2023_lab1_173116 (fetch)
+origin  https://github.com/mrbjcvsk/SI_2023_lab1_173116 (push)
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git clone https://github.com/mrbjcvsk/SI_2023_lab1_173116
+Cloning into 'SI_2023_lab1_173116'...
+warning: You appear to have cloned an empty repository.
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ java SILab1.java
+bash: java: command not found
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ touch SILab1.java
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ ls
+README.md/  SILab1.java  SI_2023_lab1_173116/
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ ls
+README.md/  SILab1.java
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/mrbjcvsk/SI_2023_lab1_173116'
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git init -b main
+warning: re-init: ignored --initial-branch=main
+Reinitialized existing Git repository in C:/Users/HP/SI_2023_lab1_173116/.git/
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ ~
+bash: /c/Users/HP: Is a directory
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git add .
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git commit -m "First commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'HP@DESKTOP-504J45P.(none)')
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git global
+git: 'global' is not a git command. See 'git --help'.
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git --globa;
+unknown option: --globa
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git --global
+unknown option: --global
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ ^C
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git config --global user.email bojcevska@outlook.com
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git commit -m " First"
+[master (root-commit) 5f7b333]  First
+ 1 file changed, 41 insertions(+)
+ create mode 100644 SILab1.java
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git remote add origin https://github.com/mrbjcvsk/SI_2023_lab1_173116.git
+error: remote origin already exists.
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git remote add master https://github.com/mrbjcvsk/SI_2023_lab1_173116.git
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git remote -v
+master  https://github.com/mrbjcvsk/SI_2023_lab1_173116.git (fetch)
+master  https://github.com/mrbjcvsk/SI_2023_lab1_173116.git (push)
+origin  https://github.com/mrbjcvsk/SI_2023_lab1_173116 (fetch)
+origin  https://github.com/mrbjcvsk/SI_2023_lab1_173116 (push)
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git push master main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/mrbjcvsk/SI_2023_lab1_173116.git'
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git push master master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 551 bytes | 137.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mrbjcvsk/SI_2023_lab1_173116.git
+ * [new branch]      master -> master
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ touch README.md
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ ls
+README.md/  SILab1.java
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git touch README.md
+git: 'touch' is not a git command. See 'git --help'.
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ touch README.md
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git add README.md
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git commit -m "Initial commit"
+[master d2f95f3] Initial commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git push master master
+To https://github.com/mrbjcvsk/SI_2023_lab1_173116.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/mrbjcvsk/SI_2023_lab1_173116.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git push master
+To https://github.com/mrbjcvsk/SI_2023_lab1_173116.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/mrbjcvsk/SI_2023_lab1_173116.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 1.20 KiB | 81.00 KiB/s, done.
+From https://github.com/mrbjcvsk/SI_2023_lab1_173116
+ * [new branch]      master     -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=<remote>/<branch> master
+
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git pull master
+From https://github.com/mrbjcvsk/SI_2023_lab1_173116
+   5f7b333..ed1876d  master     -> master/master
+You asked to pull from the remote 'master', but did not specify
+a branch. Because this is not the default configured remote
+for your current branch, you must specify a branch on the command line.
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ ls
+README.md  SILab1.java
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git add .
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ ls
+README.md  SILab1.java
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git push master master
+To https://github.com/mrbjcvsk/SI_2023_lab1_173116.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/mrbjcvsk/SI_2023_lab1_173116.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git pull master master
+From https://github.com/mrbjcvsk/SI_2023_lab1_173116
+ * branch            master     -> FETCH_HEAD
+Merge made by the 'ort' strategy.
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ ^C
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ ^C
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git push -f master master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 451 bytes | 225.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/mrbjcvsk/SI_2023_lab1_173116.git
+   ed1876d..1b46146  master -> master
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ git commit -m 'Add java class'
+On branch master
+nothing to commit, working tree clean
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ touch logs.txt
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$ ^C
+
+HP@DESKTOP-504J45P MINGW64 ~/SI_2023_lab1_173116 (master)
+$

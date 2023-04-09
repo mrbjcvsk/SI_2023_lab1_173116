@@ -1,0 +1,20 @@
+1. Create local directory and local repository
+2. Connect the local repository with Remote Git repositry
+3. Create SILab1.java 
+4. Forgot to add commit message 'Add Java class'
+5. git add 
+6.git push
+7. Create README.md file
+8. Error ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'git@github.com:asantoya/projectnewbies.git'
+To prevent you from losing history, non-fast-forward updates were rejected
+Merge the remote changes (e.g. 'git pull') before pushing again.  See the
+'Note about fast-forwards' section of 'git push --help' for details. (java file already existed)
+
+9.Did a force update 
+10. Create logs.txt
+11.Create Index.txt
+12. Fill in the data in the txt documents.
+13.add to local repository
+14. push to remote repository.
+
